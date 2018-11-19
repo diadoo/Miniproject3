@@ -12,6 +12,7 @@ for (i in 0:12){
     data[,vnam] = as.numeric(as.POSIXct(strptime(data[,vnam], "%Y-%m-%d %H:%M:%S")))
 }
 #calculate differences in time    
+
 for (i in 12:0){
     pv = paste(c("PG",i-1,"Submit"), collapse="");
     if (i==0) 
@@ -21,12 +22,13 @@ for (i in 12:0){
 }
 
 #now explore variables
-summary(data);
 print("----------------------------------------------------------------");
+summary(data);
 
 #get numeric fields only for correlation
 sel = c()
 for (i in 1:dim(data)[2]) if (is.numeric(data[,i])) sel = c(sel, i);
+print("----------------------------------------------------------------");
 
 
 cor(data[,sel],method="spearman",use="pairwise.complete.obs"); #OK for any: uses ranks

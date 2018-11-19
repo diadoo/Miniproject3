@@ -1,0 +1,40 @@
+PG5_12NWG
+Entries:         1353
+unanswered:       916
+Not a Priority:   325
+Low Priority:      77
+Medium Priority:   25
+High Priority:     10
+---------------------
+%empty:        0.6770
+%Not a Priority that completed:   0.9877
+%low Priority that completed:     0.9870
+%medium Priority that completed:  1.0000
+%high Priority that completed:    1.0000
+
+my assigned variable is PG5_12NWG, or the number of watchers on a github project. 
+
+One of the issues with my provided data set is that almost 68% of the data is comletely empty.
+this prevents the analysis script from deducing an accurate representation of the dataset.
+
+with that being said, the data retrieved from the set has a very low overall correlation 
+with other data sets. all correllating R^2 values for PG5_12NWG are within the range of
++0.2 and -0.1. I believe the reason for the low corrolation between all variables comes down
+to two factors: 
+
+	1) Just because a Github project has a large number of viewers doesn't mean that the
+		package is benificial to a project.
+
+	2) A Github repository can use any language to develop code (you could be developing
+		in Java, but a Javascript package is useless to you).
+
+as for the analysis of my data, I looked at a few relations within the data. the first relation 
+that i looked at was the correlation between the answer given and if the participant finished
+the survey. The results of my analysis show that only 5 of the people that answered my variable
+didn't finish the survey.
+
+If i were to try and improve how this variable correlates to other data, I would emphisize that 
+the github project in question is written in the same language as your project. I believe that 
+the reason why most participants categorized it as "not a proprity" is because of that issue,
+and if they are looking at releases in the language they are looking for, they will check the 
+most popular ones first.
